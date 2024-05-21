@@ -1,0 +1,71 @@
+﻿@model ApplicationUser
+
+<h4>User Details</h4>
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.UserName)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.UserName)
+    </dd>
+
+    <!-- Diğer kullanıcı özellikleri için aynı yapıyı tekrarlayabilirsiniz -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Email)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Email)
+    </dd>
+
+    <!-- Telefon Numarası -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.PhoneNumber)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.PhoneNumber)
+    </dd>
+
+    <!-- Adres -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Address)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Address)
+    </dd>
+
+    <!-- İsim -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <!-- Cinsiyet -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Gender)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Gender)
+    </dd>
+
+    <!-- Doğum Tarihi -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.BirthDate)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.BirthDate)
+    </dd>
+
+    <!-- Kayıt Tarihi -->
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.RegisterDate)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.RegisterDate)
+    </dd>
+</dl>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
